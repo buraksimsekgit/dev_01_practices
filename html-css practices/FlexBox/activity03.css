@@ -1,0 +1,41 @@
+body{
+    width: 1000px;
+}
+
+aside, nav{
+    flex-grow: 3;
+}
+
+article, aside, nav{
+    height: 200px;
+}
+
+header, footer{
+    background-color: bisque;
+    height: 100px;
+}
+
+.main, .container{
+    display: flex;
+}
+
+.main{
+    border: solid 1px;
+    flex-direction: column;
+}
+
+.container{
+    flex-wrap: wrap;
+}
+
+aside{
+    background-color: red;
+}
+
+ nav{
+     background-color: blue;
+ }
+
+ article{
+     flex-grow: 5;
+ }

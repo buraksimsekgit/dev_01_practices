@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      font-family: "Trebuchet MS", sans-serif;
+      padding: 5px;
+      border: 1px solid  gray;
+      width: 920px;
+      height: 720px;
+    }
+    img {
+      width: 25px;
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 2px;
+    }
+
+    .row1 {
+      border-radius: 8px;
+      border: 2px solid rgba(223, 233, 237, 255);
+      background-color: #f7f8f9;
+      padding: 15px;
+      width: 350px;
+    }
+
+    .row {
+      padding: 8px;
+    }
+
+    #first {
+      margin-left: 80px;
+    }
+
+    #inline {
+      margin: 45px;
+    }
+
+    #terms {
+      padding: 20px;
+      margin-left: 18px;
+    }
+
+    input[type="checkbox"] {
+      background-color: red;
+      margin: 0;
+      font: inherit;
+      color: red;
+      width: 1.15em;
+      height: 1.15em;
+      border: 0.15em solid currentColor;
+      border-radius: 0.15em;
+    }
+
+
+
+    a {
+      text-decoration: none;
+      color: red;
+    }
+
+    .button {
+      margin: 20px;
+    }
+
+    #button1 {
+      border-radius: 8px;
+      padding: 14px 50px;
+      background-color: #f44336;
+      border: none;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+
+    }
+
+    #button2 {
+      background-color: white;
+      padding: 14px 50px;
+      border-radius: 8px;
+      font-size: 16px;
+      color: red;
+      border: 2px solid red;
+      cursor: pointer;
+    }
+
+    #image{
+        float:right;
+        margin: 0px;
+        border: none;
+        width: 500px;
+        height: 700px;
+        padding: 10px;
+        border-radius: 0;
+    }
+  </style>
+  <body>
+    <div>
+        <img id="image" src="https://media.istockphoto.com/vectors/seamless-black-on-white-with-young-women-on-a-pink-background-avatars-vector-id1292165249?b=1&k=20&m=1292165249&s=170667a&w=0&h=lJ0ph48s8cqilkYIYMpI0ZeaSsNXg0J5Q1ve1bxXvBo=" alt="">
+    </div>
+    <div id="first">
+      <h1>Create Account</h1>
+
+      <div id="inline">
+        <a href="#">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/google-512.png"
+            alt=""
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/59/59439.png"
+            alt=""
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBY1xCpqA3ViGvbpu3_5Vl1tsXFDIQ1lRNLGNNUaq5tohjlROgl62g20oZsItlNxfiViU&usqp=CAU"
+            alt=""
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25684.png"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <p>or use your email for registration:</p>
+    </div>
+
+    <form>
+      <div class="row">
+        <input
+          class="row1"
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Name"
+        />
+      </div>
+      <div class="row">
+        <input
+          class="row1"
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Email"
+        />
+      </div>
+
+      <div class="row">
+        <input
+          class="row1"
+          type="password"
+          name="password"
+          placeholder="password"
+        />
+      </div>
+
+      <div id="terms">
+        <input type="checkbox" id="red" name="red" />
+        <label for="red"
+          >I agree with the <a href="#">Terms</a> and
+          <a href="#">Privacy Policy</a>.</label
+        >
+      </div>
+
+      <div class="button">
+        <button id="button1">Sign Up</button>
+        <button id="button2">Sign In</button>
+      </div>
+    </form>
+
+
+  </body>
+</html>

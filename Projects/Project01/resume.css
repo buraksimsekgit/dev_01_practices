@@ -1,0 +1,170 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  border: 1px solid gray;
+  width: 1050px;
+  height: 1020px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  width: 220px;
+  background-color: rgb(52, 58, 70);
+  margin-top: 0px;
+  height: 1000px;
+  padding-left: 10px;
+  padding-top: 20px;
+  line-height: 0.4;
+}
+
+img {
+  width: 220px;
+  border-radius: 2%;
+  border: 1px solid black;
+  margin-left: -7px;
+}
+
+h5,
+h1,
+h2,
+h3,
+p {
+  color: white;
+}
+
+h3 {
+  background-color: rgb(32, 36, 47);
+  margin-left: -8px;
+  padding: 10px;
+}
+
+#progressbar {
+  background-color: black;
+  width: 210px;
+}
+
+#progressbar > div {
+  background-color: white;
+  width: 70%;
+  height: 10px;
+}
+
+#progressbar2 {
+  background-color: black;
+  width: 210px;
+}
+
+#progressbar2 > div {
+  background-color: white;
+  width: 60%;
+  height: 10px;
+}
+
+#progressbar3 {
+  background-color: black;
+  width: 210px;
+}
+
+#progressbar3 > div {
+  background-color: white;
+  width: 85%;
+  height: 10px;
+}
+
+#progressbar4 {
+  background-color: black;
+  width: 210px;
+}
+
+#progressbar4 > div {
+  background-color: white;
+  width: 60%;
+  height: 10px;
+}
+
+#progressbar5 {
+  background-color: black;
+  width: 210px;
+}
+
+#progressbar5 > div {
+  background-color: white;
+  width: 90%;
+  height: 10px;
+}
+
+#progressbar6 {
+  background-color: black;
+  width: 210px;
+}
+
+#progressbar6 > div {
+  background-color: white;
+  width: 100%;
+  height: 10px;
+}
+
+.contact {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 1px 5px 0px 3px;
+  padding: 2px;
+}
+
+aside {
+  width: 750px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.info {
+  color: rgb(117, 117, 117);
+  font-size: small;
+}
+
+.hd {
+  color: rgb(32, 36, 47);
+  line-height: 0.4;
+}
+
+hr {
+  width: 750px;
+}
+
+.parap {
+  color: rgb(117, 117, 117);
+  line-height: 0.4;
+  margin-left: -40px;
+}
+
+.parap2 {
+  color: rgb(117, 117, 117);
+  line-height: 0.4;
+  margin-left: -20px;
+}
+
+#inf {
+  padding: 20px;
+}
+
+#title1 {
+  color: rgb(49, 49, 49);
+  float: right;
+  margin-top: -55px;
+  margin-right: 440px;
+}
+
+#carrier {
+  color: gray;
+  float: right;
+  margin-top: -25px;
+  margin-right: 50px;
+  width: 600px;
+}
+
+ul {
+  margin-left: 35px;
+}

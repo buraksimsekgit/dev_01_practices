@@ -1,0 +1,75 @@
+body {
+    font-size: 24px;
+    display: flex;
+
+  }
+  
+  button {
+    border: 0;
+    color: #fcfcfc;
+  }
+  
+  .tag a {
+    bottom: 1px;
+    color: #fcfcfc;
+    font-size: 18px;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+  }
+  .calculator {
+    background-color: gray  ;
+    border-radius: 10px;
+    box-shadow: 0 8px black;
+  }
+  
+  .top-bar {
+    display: flex;
+  }
+  .top-bar button {
+    box-shadow: 0 4px 1px darkgoldenrod;
+    background: #ffd166;
+    border-radius: 10px;
+    flex: 1;
+    font-size: 22px;
+    height: 48px;
+    margin: 10px;
+  }
+  .top-bar div {
+    background: #26547c;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 5px black;
+    color: white;
+    flex: 2.5;
+    font-size: 28px;
+    height: 26px;
+    margin: 10px;
+    padding: 12px;
+    text-align: right;
+  }
+  
+  .keys {
+    display: flex;
+    flex-flow: column wrap;
+    height: 290px;
+  }
+  .keys button {
+    box-shadow: 0 4px 1px #142c41;
+    background: #26547c;
+    border-radius: 10px;
+    height: 50px;
+    line-height: 48px;
+    margin: 9px;
+    width: 75px;
+  }
+  .keys button.op {
+    box-shadow: 0 4px 1px #cc8f00;
+    background: #ffd166;
+    color: #7d7d7d;
+    line-height: 45px;
+  }
+  .keys button.equals {
+    box-shadow: 0 4px 1px #048c68;
+    background: #06d6a0;
+    color: #7d7d7d;
+  }

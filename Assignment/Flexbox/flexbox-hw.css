@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --backgroundColor: #f4f4f4;
+  --borderColor: #e2e2e2;
+}
+body {
+  height: 65 0px;
+  width: 1017px;
+  margin: 20px auto;
+}
+
+.main {
+  display: flex;
+  background-color: var(--backgroundColor);
+}
+
+.items,
+.items2,
+.items3,
+.items2-m {
+  background-color: white;
+}
+
+.items {
+  border: 1px var(--borderColor) solid;
+  width: 500px;
+  height: 200px;
+  padding: 25px;
+  margin: 5px;
+  display: flex;
+}
+
+.inline-text {
+  padding-left: 20px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+.inline-text2 {
+  line-height: 10px;
+}
+
+h3 {
+  color: red;
+}
+
+.items2 {
+  border: 1px var(--borderColor) solid;
+  display: flex;
+  width: 500px;
+  margin-top: 5px;
+}
+
+.items3-m {
+  border-bottom: 1px var(--borderColor) solid;
+  display: flex;
+  width: 500px;
+  margin-top: 0px;
+}
+
+.inline-items {
+  align-self: center;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 10px;
+  flex-direction: column;
+}
+
+#left-text {
+  line-height: 20px;
+  text-align: left;
+  width: 450px;
+}
+
+#left-text2 {
+  padding-top: 5px;
+  line-height: 5px;
+  text-align: left;
+}
+
+.inline-items > img {
+  width: 350px;
+}
+
+p {
+  color: #9a9a9a;
+}
+
+.items3 {
+  border: 1px var(--borderColor) solid;
+  width: 405px;
+  height: 100px;
+}
+
+.container2 > div:nth-child(1) {
+  height: 405px;
+}
+
+.container2 > div:nth-child(2) {
+  height: 200px;
+}
+
+#big-image {
+  width: 200px;
+}
+
+.end-img {
+  width: 80px;
+  margin: 10px 20px;
+  padding: 3px;
+}
+
+.items2-m {
+  flex-direction: column;
+  border: 1px var(--borderColor) solid;
+  width: 502px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  line-height: 7px;
+}
+
+.corner {
+  margin: -20px;
+}
+
+.corner > img {
+  heigh: 100p;
+}
+
+#triangle {
+  background-color: red;
+  background-size: cover;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(40% 0, 0 0, 0 40%);
+}
+
+#arrow {
+  background-color: blue;
+  background-size: cover;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  clip-path: polygon(51% 70%, 100% 18%, 100% 46%, 51% 100%, 0% 50%, 0 16%);
+}

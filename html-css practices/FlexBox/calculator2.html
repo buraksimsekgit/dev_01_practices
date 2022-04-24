@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ulan Rakymzhanov" />
+    <title>Calculator with Flexbox</title>
+    <style>
+      /* 
+        You could also store variables in root for better use later.
+        But i didn't teaching purposes.
+
+        :root {
+          --btnMainColor: darkslategray;
+          --btnSecondaryColor:  rgb(245, 190, 89);
+          --btnTertiaryColor: rgb(22, 231, 134);
+          ...and so on
+        }
+
+       */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: rgb(7, 70, 109);
+        font-size: 28px;
+        color: #fff;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .calculator,
+      .display,
+      .cell {
+        border-radius: 6px;
+        padding: 8px;
+      }
+      .calculator {
+        background: rgb(224, 86, 93);
+        background-image: linear-gradient(rgb(224, 86, 93), #ff9933, #cccc00);
+        max-width: 360px;
+        margin: 20px auto;
+      }
+      .row {
+        display: flex;
+      }
+
+      .display,
+      .cell {
+        height: 50px;
+        margin: 8px;
+        display: flex;
+        align-items: center;
+      }
+      .display {
+        background-color: darkslategray;
+        /*
+          width:  calc(222px + (8px * 4));
+          uncomment below width:  100%; and flex:  4;
+        */
+        width: 100%; /* since nowrap we don't care how much */
+        flex:  4;
+        box-shadow: 0 2px 1px 0.5px rgb(26, 53, 53);
+        justify-content: flex-end;
+      }
+      .cell {
+        /*
+          width: calc((360px - 64px) / 4);
+          uncomment below width:  100%; and flex:  1;
+        */
+        width: 100%;
+        flex:  1;
+        background-color: darkslategray;
+        justify-content: center;
+        box-shadow: 0 2px 1px 0.5px rgb(26, 53, 53);
+      }
+      .cell.y {
+        background-color: rgb(245, 190, 89);
+        box-shadow: 0 2px 1px 0.5px rgb(197, 131, 8);
+        color: #000;
+      }
+      .cell.g {
+        background-color: rgb(22, 231, 134);
+        box-shadow: 0 2px 1px 0.5px rgb(14, 179, 102);
+        color: #000;
+      }
+      .cell:hover {
+        color: gray;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <section class="row">
+        <div class="cell y">C</div>
+        <div contenteditable="true" class="display">0 </div>
+<!--         OR
+        <input type="text" class="display" value="0"/>  -->
+      </section>
+      <section class="row">
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell y">x</div>
+      </section>
+      <section class="row">
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell y">/</div>
+      </section>
+      <section class="row">
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell y">+</div>
+      </section>
+      <section class="row">
+        <div class="cell">.</div>
+        <div class="cell">0</div>
+        <div class="cell g">=</div>
+        <div class="cell y">-</div>
+      </section>
+    </div>
+  </body>
+</html>
+
+
+<!-- OR Without width and 2 rows only -->
+
+<!-- <!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ulan Rakymzhanov" />
+    <title>Calculator with Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: rgb(7, 70, 109);
+        font-size: 28px;
+        color: #fff;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .calculator,
+      .display,
+      .cell {
+        border-radius: 6px;
+        padding: 8px;
+      }
+      .calculator {
+        background: rgb(224, 86, 93);
+        background-image: linear-gradient(rgb(224, 86, 93), #ff9933, #cccc00);
+        max-width: 360px;
+        margin: 20px auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .display,
+      .cell {
+        height: 50px;
+        margin: 8px;
+        display: flex;
+        align-items: center;
+      }
+      .display {
+        background-color: darkslategray;
+        flex:  3;
+        flex-basis: 70%;
+        box-shadow: 0 2px 1px 0.5px rgb(26, 53, 53);
+        justify-content: flex-end;
+      }
+      .cell {
+        flex:  1;
+        flex-basis: 20%;
+        background-color: darkslategray;
+        justify-content: center;
+        box-shadow: 0 2px 1px 0.5px rgb(26, 53, 53);
+      }
+      .cell.y {
+        background-color: rgb(245, 190, 89);
+        box-shadow: 0 2px 1px 0.5px rgb(197, 131, 8);
+        color: #000;
+      }
+      .cell.g {
+        background-color: rgb(22, 231, 134);
+        box-shadow: 0 2px 1px 0.5px rgb(14, 179, 102);
+        color: #000;
+      }
+      .cell:hover {
+        color: gray;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <section class="row">
+        <div class="cell y">C</div>
+        <div class="display">0</div>
+      </section>
+      <section class="row">
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell y">x</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell y">/</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell y">+</div>
+        <div class="cell">.</div>
+        <div class="cell">0</div>
+        <div class="cell g">=</div>
+        <div class="cell y">-</div>
+      </section>
+    </div>
+  </body>
+</html>  -->

@@ -132,10 +132,6 @@ footer {
   margin: -20px;
 }
 
-.corner > img {
-  heigh: 100p;
-}
-
 #triangle {
   background-color: red;
   background-size: cover;

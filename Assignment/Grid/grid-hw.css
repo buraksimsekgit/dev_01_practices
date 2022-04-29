@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poppins:wght@500&family=Roboto:wght@100&family=Updock&display=swap');
+
+body{
+    border: 1px gray solid;
+    height: 100%;
+    width: 1200px;
+    box-shadow: 3px 3px 3px darkgray;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10px;
+
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+article {
+    border: 1px solid gray;
+    box-shadow: 3px 3px 3px darkgray;
+}
+
+img {
+    width: 100%;
+}
+
+.text {
+    padding: 10px;
+}
+
+article:nth-child(1) {
+    grid-column: span 2;
+}
+
+button {
+    background: gray;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    color: white;
+}

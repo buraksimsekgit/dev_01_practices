@@ -1,0 +1,60 @@
+.main {
+  width: 700px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header2 {
+  width: 350px;
+  align-self: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu > a {
+  text-decoration: none;
+  color: rgb(0, 174, 232);
+  font-weight: bold;
+}
+
+.container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+  justify-items: center;
+}
+
+p {
+  color: gray;
+  font-size: 12px;
+}
+.container div {
+  text-align: left;
+}
+.container img {
+  width: 340px;
+  object-fit: contain;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 10px;
+}

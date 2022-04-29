@@ -1,0 +1,72 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(max-content, 1fr);
+  grid-auto-flow: dense;
+  align-items: stretch;
+}
+
+.most_read,
+.recommended,
+.big-article {
+  grid-row: span 2;
+}
+
+.article {
+  grid-column: span 2;
+}
+.big-article {
+  grid-column: span 3;
+}
+
+.most_read,
+.recommended {
+  display: block;
+  padding: 1em;
+}
+
+article {
+  height: 100%;
+}
+.article p {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding: 1em;
+}
+
+p {
+  text-decoration: none;
+}
+.most_read {
+  background-color: beige;
+  color: crimson;
+}
+.recommended {
+  background-color: crimson;
+  color: beige;
+}
+.most_read li,
+.recommended li {
+  padding: 8px 0;
+}
+.recommended li {
+  border-color: beige;
+}
+.most_read p {
+  color: black;
+}
+.recommended p {
+  color: white;
+}
+
+article {
+  background-size: cover;
+}
+article p {
+  background: rgba(0, 0, 0, 0.25);
+  color: cyan;
+}
+article h2 {
+  color: white;
+}

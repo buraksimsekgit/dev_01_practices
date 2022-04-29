@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&subset=latin-ext');
+
+body {
+  background-color: rgb(178, 243, 231);
+}
+
+header {
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  background-color: rgb(55, 155, 149);
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: white;
+
+}
+
+main {
+  background-color: rgb(55, 155, 149);
+  display: grid;
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(200px, 0px);
+  margin: 0 auto;
+}
+
+.item1 {
+  grid-row: 1 / 3;
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-row: 1 / 5;
+}
+
+.item7 {
+  grid-column-start: 3;
+  grid-row: 3 / 5;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  border-radius: 10px;
+}
+
+.imj:hover {
+  transform: scale(1.04);
+  -webkit-transition: transform 1s ease-in-out;
+  -ms-transition: transform 1s ease-in-out;
+  }

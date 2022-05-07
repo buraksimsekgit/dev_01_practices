@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > iframe, .row > audio {
+    flex: 1;
+    margin: 5px;
+}
+@media (max-width: 748px) {
+    .row > audio {
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .row > audio {
+        flex-basis: 100%;
+    }
+}        body {
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > iframe, .row > audio {
+    flex: 1;
+    margin: 5px;
+}
+@media (max-width: 748px) {
+    .row > audio {
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .row > audio {
+        flex-basis: 100%;
+    }
+}

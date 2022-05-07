@@ -58,3 +58,20 @@ footer {
   text-align: center;
   padding: 20px 10px;
 }
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .container {
+    grid-template-columns: 100%;
+  }
+
+  p {
+    grid-template-columns: 100%;
+    width: 350px;
+    flex-basis: 100%;
+  }
+}

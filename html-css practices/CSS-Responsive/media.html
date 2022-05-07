@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --myRed: rgb(220,20,60);
+            --cream: rgb(245,245,220)
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-rows: minmax(max-content, 1fr);
+            grid-auto-flow: row dense;
+        }
+        .photo-box {
+            background-image: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            grid-column: span 2;
+            border: 1px solid;
+        }
+
+        .tbox1, .tbox2 {
+            grid-row: span 2;
+            background-color: lightgrey;
+        }
+        .lg {
+            grid-column: span 4;
+            grid-row: span 2;
+            background-color: brown;
+        }
+        h2 {
+            color: white;
+        }
+
+        h3 {
+            color: aqua;
+        }
+
+        .text {
+            font-size: 20px;
+        }
+        .text.tbox1 {
+            background-color: var(--cream);    
+        }
+        .text.tbox2 {
+            background-color: var(--myRed);
+            color: var(--cream);
+            padding: 10px;
+        }
+        
+        .red {
+            color: var(--myRed);
+        }
+
+        .cream {
+            color: var(--cream);
+        }
+
+        hr {
+            height: 1px;
+            border: 0;
+            margin-right: 10px;
+        }
+
+        .text-box1 hr {
+            background-color: var(--myRed);
+        }
+
+        .text-box2 hr {
+            background-color: var(--cream);
+        }
+
+        ol li::marker {
+            color: var(--myRed);
+        }
+        li {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="photo-box tbox1">
+            <ol>
+                <h2 class="red">Most read posts</h2>
+                <li>Lorem ipsum dolor sit amet <span class="red">24525</span></li>
+                <hr class="red">
+                <li>Lorem ipsum dolor sit amet <span class="red">24525</span></li>
+                <hr class="red">
+                <li>Lorem ipsum dolor sit amet <span class="red">24525</span></li>
+                <hr class="red">
+                <li>Lorem ipsum dolor sit amet <span class="red">24525</span></li>
+                <hr class="red">
+                <li>Lorem ipsum dolor sit amet <span class="red">24525</span></li>
+                <hr class="red">
+            </ol>
+        </div>
+        <div class="photo-box tbox2">
+            <ul>
+                <h2 class="cream">Recommended</h2>
+                <li>Lorem ipsum dolor sit amet</li>
+                <hr class="cream">
+                <li>Lorem ipsum dolor sit amet</li>
+                <hr class="cream">
+                <li>Lorem ipsum dolor sit amet</li>
+                <hr class="cream">
+                <li>Lorem ipsum dolor sit amet</li>
+                <hr class="cream">
+                <li>Lorem ipsum dolor sit amet</li>
+                <hr class="cream">
+            </ul>
+        </div>
+
+        <div class="photo-box photo-box1">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div></div>
+        <div class="photo-box photo-box2">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div class="photo-box photo-box3">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div class="photo-box photo-box4 lg">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div class="photo-box photo-box5 lg">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div class="photo-box photo-box6">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div class="photo-box photo-box7">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div class="photo-box photo-box8">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div class="photo-box photo-box9">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+        <div class="photo-box photo-box10">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <h3>
+                Reportaje
+                <br>
+                Lorem Ipsum
+            </h3>
+        </div>
+    </div>
+</body>
+</html>

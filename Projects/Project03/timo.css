@@ -25,20 +25,23 @@ nav {
   align-content: center;
 }
 
-ul {
+.list1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-evenly;
   text-align: center;
   list-style-type: none;
+  align-content: center;
   color: gray;
   font-size: 20px;
   cursor: pointer;
-  font-weight: lighter;
+  font-weight: 600;
 }
 
 .credentials {
   text-align: right;
+  font-weight: 600;
+
 }
 
 .icon {

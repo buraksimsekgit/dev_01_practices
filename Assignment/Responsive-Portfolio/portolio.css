@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+
+:root{
+    --textColor: rgb(182, 180, 179);
+    --headerColor: rgb(89, 170, 164);
+    --backgroundColor:  rgb(234, 234, 234);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--backgroundColor);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-bottom: 2px solid var(--textColor);
+  background-color: white;
+  margin-bottom: 0px;
+  height: 100px;
+}
+
+.name {
+  background-color: var(--headerColor);
+  width: 250px;
+  padding-left: 30px;
+  margin-left: 30px;
+  color: white;
+}
+
+.hdr {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  color: var(--textColor);
+}
+
+.middle {
+  border-left: 2px solid var(--textColor);
+  border-right: 2px solid var(--textColor);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+section {
+  border: 2px solid var(--textColor);
+  width: 600px;
+  padding: 20px;
+  height: 100%;
+  background-color: white;
+}
+
+h2 {
+  color: var(--headerColor);
+  font-size: 30px;
+}
+
+img {
+  float: left;
+  width: 200px;
+  height: 150px;
+  margin: 25px 20px 20px 0px;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+  color: var(--textColor);
+  line-height: 40px;
+}
+
+footer {
+  border-top: 5px solid var(--backgroundColor);
+  text-align: center;
+  background-color: rgb(102, 102, 102);
+  height: 100px;
+}
+
+.section2 {
+  width: 600px;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.projects {
+  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2010/09/website-backgrounds.jpg");
+  width: 270px;
+  height: 270px;
+}
+
+.section3 {
+  width: 600px;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 20px;
+  color: var(--textColor);;
+}
+button {
+  width: 140px;
+  height: 50px;
+  background-color: var(--headerColor);
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#comment {
+  height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    align-items: center;
+  }
+
+  section {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+
+    
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    height: 130px;
+  }
+
+  .name {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .hdr {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    float: none;
+    width: 550px;
+    height: auto;
+    margin: 25px 20px 20px 0px;
+  }
+
+  .section2 {
+    width: 500px;
+  }
+
+  .projects {
+    width: 100%;
+  }
+}

@@ -217,7 +217,9 @@ stats[0].stat.name = 'Burak';
 console.log(stats[0].stat.name);
 
 // Challenge 16 - Console log keys and values of data object.
-console.log(Object.entries(data))
+for(let [key, value] of Object.entries(data)) {
+  console.log(key, value  );
+}
 
 // Challenge 17 - From data show avatar, name, height and weight on the DOM. To do that copy and paste below code:
 

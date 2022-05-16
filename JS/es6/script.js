@@ -182,7 +182,8 @@ console.log(obj3);
 
 
 const person = {name: 'Mark', lastName: 'Twain', age: 40};
-const {fname, lastName, age } = person; // destructure
+Input: [ 1.5, 3, 2.5, 1 ] Output: 2
+
 // const name = person.name;
 console.log(fname, lastName, age); // Mark Twain
 console.log(person.name, person.lastName, person.age) // Mark

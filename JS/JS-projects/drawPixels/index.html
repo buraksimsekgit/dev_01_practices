@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DrawPixels</title>
+    <!-- This gets us our fun 8-bit font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <!-- loads our own CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>DrawPixels</h1>
+    <div>
+      <button id='add-row'>Add a row</button>
+      <button id='fill-color'>Fill color</button>
+      <button id='fill-empty'>Fill empty cells</button>
+      <button id='clear'>Clear cells</button>
+      <button id='reset'>Reset</button>
+      <select id="select-color">
+        <option class="red" value="red">Red</option>
+        <option class="orange" value="orange">Orange</option>
+        <option class="yellow" value="yellow">Yellow</option>
+        <option class="green" value="green">Green</option>
+        <option class="blue" value="blue">Blue</option>
+        <option class="indigo" value="indigo">Indigo</option>
+        <option class="violet" value="violet">Violet</option>
+        <option class="black" value="black">Black</option>
+        <option class="white" value="white">White</option>
+        <option class="brown" value="brown">Brown</option>
+      </select>
+      <div class="customRowColumn">
+        <input type="number" value="0" min="0" id='rows'>Rows</button>
+        <input type="number" value="0" min="0" id='columns'>Columns</button>
+        <button id='customized'>Add customized cells</button>
+      </div>
+    </div>
+    <table id="table">
+    </table>
+  </body>
+  <!-- loads our JavaScript file -->
+  <script type="text/javascript" src="script.js"></script>
+</html>
